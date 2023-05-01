@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hemp Clicker</title>
+    <link rel="icon" type="image" href="images/ico.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="alertOverlay" hidden>
+
+    </div>
+    <div id="alert" hidden>
+        <h3>OH!</h3>
+        <p>It seems like you don't have</p>
+        <p>enough money.</p>
+        <div id="closeAlert">X</div>
+    </div>
+    <div id="overlay">
+        <div id="mainSec">
+            <h1>Hemp Clicker</h1>
+            <h2 id="money">$0.00</h2>
+            <h2 id="clickRate">per click <span>$0.06</span></h2>
+            
+            <h2 id="perSecRate">per sec <span>$0.00</span></h2>
+            <img class="click" src="images/click.png" alt="Hemp">
+        </div>
+        <div id="store">
+            <div id="storeOverlay">
+                <h2 id="storeH2">Store</h2>
+                <div class="single-item">
+                    <div class="col col1">
+                        <img id="icon" src="images/arrow.png" alt="arrow">
+                    </div>
+                    <div class="col col2">
+                        <h3>Better Click</h3>
+                        <h3 class="priceItem">$1.00</h3>
+                        <h4>LVL <span>0</span></h4>
+                        <button onclick="buy(this)">Purchase</button>
+                    </div>
+                </div>
+
+                <div class="single-item">
+                    <div class="col col1">
+                        <img id="icon" src="images/seed.png" alt="seeds">
+                    </div>
+                    <div class="col col2">
+                        <h3>Hemp Seeds Farm</h3>
+                        <h3 class="priceItem">$30.00</h3>
+                        <!--50$-->
+                        <h4>LVL <span>0</span></h4>
+                        <button onclick="buyFarm(this)">Purchase</button>
+                    </div>
+                </div>
+
+                <div class="single-item">
+                    <div class="col col1">
+                        <img id="icon" src="images/fiber.png" alt="seeds">
+                    </div>
+                    <div class="col col2">
+                        <h3>Hemp Fiber Machine</h3>
+                        <h3 class="priceItem">$250.00</h3>
+                        <h4>LVL <span>0</span></h4>
+                        <button onclick="buyFarm(this)">Purchase</button>
+                    </div>
+                </div>
+
+                <div class="single-item">
+                    <div class="col col1">
+                        <img id="icon" src="images/hydraulic.png" alt="seeds">
+                    </div>
+                    <div class="col col2">
+                        <h3>CBD Oil Press</h3>
+                        <h3 class="priceItem">$2.0K</h3>
+                        <h4>LVL <span>0</span></h4>
+                        <button onclick="buyFarm(this)">Purchase</button>
+                    </div>
+                </div>
+
+                <div class="single-item">
+                    <div class="col col1">
+                        <img id="icon" src="images/factory.png" alt="seeds">
+                    </div>
+                    <div class="col col2">
+                        <h3>CBD Extraction Factory</h3>
+                        <h3 class="priceItem">$30.0K</h3>
+                        <h4>LVL <span>0</span></h4>
+                        <button onclick="buyFarm(this)">Purchase</button>
+                    </div>
+                </div>
+                <!-- End of Store HTML-->
+            </div>
+        </div>
+    </div>
+
+<script src="script.js"></script>
+</body>
+</html>
